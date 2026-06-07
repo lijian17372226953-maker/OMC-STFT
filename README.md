@@ -38,16 +38,3 @@ However, if you wish to precisely reproduce the specific computational execution
 * **Hardware:** Intel Core i7-13650HX (14 physical cores) with 32 GB RAM.
 
 (**运行即将开源的 OMC-STFT 算法没有严格的硬件配置要求**。该算法具有极高的运行效率，可适配常规个人电脑。但如果您希望精确复现论文 Section III.E 中报告的具体运行时间基准（如 4.31 秒的并行处理时间），建议使用与我们测试环境相近的配置：MATLAB R2024a 及 Intel Core i7 14核处理器 / 32GB 内存。)
-
-## 📝 Citation (引用)
-
-If you find these datasets or the upcoming code useful in your research, please consider citing our paper:
-
-```bibtex
-@article{OMC_STFT_2026,
-  title={OMC-STFT: An Adaptive Phase Filtering Method for InSAR Based on Optimal Magnitude Combination},
-  author={Li, Jian and Fan, Hongdong and Tian, Zeming and Sen, Du and Huang, Hai},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  year={2026},
-  note={Under Review / Accepted}
-}
