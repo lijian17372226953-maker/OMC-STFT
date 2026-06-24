@@ -24,13 +24,14 @@ You can run the filter using the default parameters optimized for standard InSAR
 ```matlab
 % Load your noisy phase data (radians)
 load('dataCone.mat'); % Load example dataset
+cpx = exp(1i.* dataRamp.psi_noisy);
 
 % Apply OMC-STFT Filtering
-psi_filtered = OMC_STFT(psi_noisy);
+psi_filtered = OMC_STFT(cpx);
 
 % Display the result
 figure;
-subplot(1,2,1); imagesc(psi_noisy); title('Noisy Phase'); colormap jet;
+subplot(1,2,1); imagesc(dataRamp.psi_noisy); title('Noisy Phase'); colormap jet;
 subplot(1,2,2); imagesc(psi_filtered); title('OMC-STFT Filtered Phase'); colormap jet;
 ```
 
